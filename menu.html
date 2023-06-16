@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="tab_logo.svg" />
+  <title>Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div id="navbar">
+          <li><a href="index.html" id="logo"><img src="sticky-logo.svg" alt="Logo" style="width:70;height:3rem; margin-bottom: -10px; margin-top: 0px"></a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="plans.html">OUR PLANS</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="locations.html">LOCATIONS</a></li>
+          <li><a href="reservations.html">RESERVATIONS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="menu" class="hero">
+       
+    <div class="hero-overlay"></div>
+
+    <div class="wrap">
+      <div class="line">
+        <div class="left">
+          <div class="content">
+            <span class="spanSlow">Start</span>
+          </div>
+        </div><!--
+        --><div class="right">
+          <div class="content">
+            <span class="spanSlow">Start</span>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="left">
+          <div class="content">
+            <span class="spanSlow">Your Day</span>
+          </div>
+        </div><!--
+        --><div class="right">
+          <div class="content">
+            <span class="spanSlow">Your Day</span>
+          </div>
+        </div>
+        </div>
+        <div class="line">
+            <div class="left">
+              <div class="content">
+                <span class="spanFast">The South Korean</span>
+              </div>
+            </div><!--
+            --><div class="right">
+              <div class="content">
+                <span class="spanFast">The South Korean</span>
+              </div>
+            </div>
+          </div>
+          <div class="line">
+              <div class="left">
+                <div class="content">
+                  <span class="spanSlow">Way!</span>
+                </div>
+              </div><!--
+              --><div class="right">
+                <div class="content">
+                  <span class="spanSlow">Way!</span>
+                </div>
+              </div>
+            </div>
+  </div>
+
+  </section>
+    <main>
+      <section id="menu">
+        <h2 style="text-align: center;">Our Menu</h2>
+        <h3 style="text-align: center; font-size: 25px; font-weight: normal;">Start your day with delicious and healthy Korean cuisine!</h3>
+
+        <section class="main">
+          <div class="wrap wrap--1">
+            <div class="container container--1" onclick="goToBreakfastMenu()"> 
+              <p class="menu-item">Breakfast</p>
+            </div>
+          </div>
+          <div class="wrap wrap--2">
+            <div class="container container--2" onclick="goToLunchMenu()">
+              <p class="menu-item">Lunch</p>
+            </div>
+          </div>
+          <div class="wrap wrap--3">
+            <div class="container container--3"  onclick="goToDrinkMenu()">
+              <p class="menu-item">Drinks</p>
+            </div>
+          </div>
+        </section>
+        <section id="home-menu">
+
+          <h2 style="text-align: center;" id="breakfast">Breakfast</h2>
+          <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); grid-column-gap: 10px; margin-left: 5%;">
+          
+            <li>
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="gimbap.jpg" alt="gimbap" class="menu-item-img">
+                </div>
+                <div class="menu-item-details">
+                  <span class="dish">Gimbap (10 rolls)</span>
+                  <span class="Price">₩1500 ($1.55)</span>
+                  <span class="Description">Rice, Carrots, Pickled radish, egg, and ham rolled in seaweed.</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="jook.jpg" alt="Jook" class="menu-item-img">
+                </div>
+                <div class="menu-item-details">
+                  <span class="dish">Jook 1oz</span>
+                  <span class="Price">₩8,900 ($9.21)</span>
+                  <span class="Description">Rice porridge cooked with broth, flavored with vegetables, mushrooms, seafood.</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="Gyeran mari.jpg" alt="Gyeran Mari" class="menu-item-img">
+                </div>
+                <div class="menu-item-details">
+                  <span class="dish">Gyeran Mari (12 rolls)</span>
+                  <span class="Price">₩3,000 ($3.10)</span>
+                  <span class="Description">Korean-style rolled omelet made with beaten eggs and finely chopped carrots, onions, and green onions.</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="namul.jpg" alt="Namul" class="menu-item-img">
+                </div>
+                <div class="menu-item-details">
+                  <span class="dish">Namul 2oz</span>
+                  <span class="Price">₩5,000 ($5.17)</span>
+                  <span class="Description">Assorted seasoned vegetable sides; spinach, bean sprouts, radish, and fernbrake blanched and seasoned with sesame oil, soy sauce.</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="Kimchi.jpg" alt="Kimchi" class="menu-item-img">
+                </div>
+                <div class="menu-item-details">
+                  <span class="dish">Kimchi 1oz</span>
+                  <span class="Price">₩2,900 ($3.00)</span>
+                  <span class="Description"> Fermented napa cabbage or Korean radishes, fish sauce, green onion, hot pepper flakes.</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="Mandu.jpg" alt="Mandu" class="menu-item-img">
+                </div>
+                <div class="menu-item-details">
+                  <span class="dish">Mandu (10 Dumplings)</span>
+                  <span class="Price">₩5,000 ($5.17)</span>
+                  <span class="Description">Korean dumplings filled with, ground pork, tofu, garlic chives, and ginger and kimchi. Steamed, boiled, or pan-fried.</span>
+                </div>
+              </div>
+            </li>
+           
+  </section>
+
+
+  <section id="home-menu">
+
+    <h2 style="text-align: center;" id="lunch">Lunch</h2>
+    <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); grid-column-gap: 10px; margin-left: 5%;">
+    
+      <li>
+        <div class="menu-item">
+          <div class="menu-item-image">
+            <img src="Japchae.jpg" alt="Japchae" class="menu-item-img">
+          </div>
+          <div class="menu-item-details">
+            <span class="dish">Japchae 1oz</span>
+            <span class="Price">₩9000 ($9.31)</span>
+            <span class="Description">Stir-fried sweet potato glass noodles,  bell peppers, carrots, mushrooms + beef, chicken, or tofu, seasoned with sesame oil.</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-item">
+          <div class="menu-item-image">
+            <img src="Samgyetang.jpg" alt="Samgyetang" class="menu-item-img">
+          </div>
+          <div class="menu-item-details">
+            <span class="dish">Samgyetang 1oz</span>
+            <span class="Price">₩8,900 ($7.24)</span>
+            <span class="Description"> Chicken soup made with a whole young chicken stuffed with rice, ginseng, jujubes, garlic.</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-item">
+          <div class="menu-item-image">
+            <img src="Jjigae.jpg" alt="Jjigae" class="menu-item-img">
+          </div>
+          <div class="menu-item-details">
+            <span class="dish">Jjigae 1oz</span>
+            <span class="Price">₩8,900 ($7.24)</span>
+            <span class="Description">Spicy stew made with beef, onions, peppers, kimchi, soybean paste, soft tofu.</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-item">
+          <div class="menu-item-image">
+            <img src="Haemul Pajeon.png" alt="Haemul Pajeon" class="menu-item-img">
+          </div>
+          <div class="menu-item-details">
+            <span class="dish">Haemul Pajeon (medium)</span>
+            <span class="Price">₩10,000 ($10.35)</span>
+            <span class="Description">Savory pancake made with vegetables, shrimp, squid, and clams. Vegetarian option available.</span>
+          </div>
+        </div>
+      </li>
+     
+  </section>
+
+  <section id="home-menu">
+
+    <h2 style="text-align: center;" id="drinks">Drinks</h2>
+    <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); grid-column-gap: 10px; margin-left: 5%;">
+    
+      <li>
+        <div class="menu-item">
+          <div class="menu-item-image">
+            <img src="Yuja Tea.jpg" alt="Yuja Tea" class="menu-item-img">
+          </div>
+          <div class="menu-item-details">
+            <span class="dish">Yuja Tea (large)</span>
+            <span class="Price">₩1500 ($1.55)</span>
+            <span class="Description">Citrus tea made from the yuja fruit, refreshing and tangy flavor, hot or cold.</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-item">
+          <div class="menu-item-image">
+            <img src="Barley Tea.jpg" alt="Barley Tea" class="menu-item-img">
+          </div>
+          <div class="menu-item-details">
+            <span class="dish">Barley Tea (large)</span>
+            <span class="Price">₩8,900 ($9.21)</span>
+            <span class="Description">Caffeine-free herbal tea made from roasted barley, nutty and slightly bitter taste.</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-item">
+          <div class="menu-item-image">
+            <img src="Soju.jpg" alt="Gyeran Mari" class="menu-item-img">
+          </div>
+          <div class="menu-item-details">
+            <span class="dish">Soju (large)</span>
+            <span class="Price">₩3,000 ($3.10)</span>
+            <span class="Description">Clear distilled liquor made from rice, wheat, or barley.</span>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="menu-item">
+          <div class="menu-item-image">
+            <img src="Makgeolli.jpeg" alt="Makgeolli" class="menu-item-img">
+          </div>
+          <div class="menu-item-details">
+            <span class="dish">Makgeolli (large)</span>
+            <span class="Price">₩5,000 ($5.17)</span>
+            <span class="Description">Korean rice wine with a slightly sweet and tangy taste.</span>
+          </div>
+        </div>
+      </li>
+       
+  </section>
+
+  
+
+      </section>
+      
+    </main>
+  
+  <footer>
+    <p>&copy; 2023 Pur&Simple. All rights reserved.</p>
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>
