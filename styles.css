@@ -19,7 +19,8 @@ body {
 
 header {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 43px;
+  z-index: 2;
 }
 
 nav ul {
@@ -43,18 +44,19 @@ nav ul li a.active {
 
 #navbar {
   overflow: hidden;
-  /*background-color: rgba(46, 218, 224, 0.559);*/
-  padding: 0px ; /* Large padding which will shrink on scroll (using JS) */
-  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-  position: sticky; /* Sticky/fixed navbar */
+  background-color: rgb(255, 255, 255);
+  padding: 20px ; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.0s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
   width: 100%;
   top: 0; /* At the top */
   left: 0;
-  z-index: 100;
-  border-radius: 5px;
+  z-index: 2;
+  border-radius: 0px;
   justify-content: right;
   margin-top: -10px;
   margin-bottom: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.371); /* Add shadow */
 }
 
 /* Style the navbar links */
@@ -76,12 +78,21 @@ nav ul li a.active {
   padding: 5px ;
   font-size: 30px;
   font-family: brandon-grotesque, sans-serif;
-  transition: 0.4s;
+  transition: 0.0s;
   margin: auto;
   border-radius: 30px;
   margin-left: 0px;
   margin-top: 0px;
   float: right;
+}
+
+.logo {
+  position: absolute;
+  top: 20px; /* Adjust the top positioning as needed */
+  right: 30px; /* Adjust the right positioning as needed */
+  width: 60px; /* Adjust the width of the image as needed */
+  height: auto; /* Maintain aspect ratio */
+  
 }
 
 #navbar #logo a {
@@ -200,7 +211,12 @@ footer {
   text-align: center;
   color: #000000;
   padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
 }
+
 
 .hero h1 {
   font-size: 58px;
@@ -327,6 +343,8 @@ h2 {
 
 .container_hero {
 margin-top: 20vh;
+padding: 0px;
+margin: 0px;
 }
 
 @keyframes pulsate {
@@ -592,6 +610,14 @@ root {
     background-color: rgba(100, 98, 98, 0.288);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+#menu.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3%; /* Adjust the value as desired */
+}
+
 
 .dish {
     float: left;
@@ -680,4 +706,230 @@ root {
   flex-grow: 1;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.statement-box {
+  flex: 1;
+  background-color: #8be7bf5a;
+  margin-top: 20px;
+  padding: 20px;
+  color: #000000;
+}
+
+
+.statement-box:first-child {
+  margin-right: 10px; /* Adjust the margin-right value to add space */
+}
+
+.statement-box:last-child {
+  margin-left: 10px; /* Adjust the margin-left value to add space */
+}
+
+.statement-box h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.statement-box p {
+  font-size: 18px;
+}
+
+.banner {
+  width: 100%;
+  height: 300px;
+  background-image: url('store.jpg');
+  background-size: cover;
+  background-position: center top 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.banner h1 {
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+}
+
+/* Contact Form */ 
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+
+input[type="submit"] {
+  background-color: #8be7bf;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #5ab79d;
+}
+
+.banner2 {
+  display: inline-block;
+  padding: 10px;
+  background-color: #8be7bf;
+  color: #fff;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 300px;
+  background-image: url('banner2.jpg');
+  background-size: cover;
+  background-position: center top 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.banner3 {
+  display: inline-block;
+  padding: 10px;
+  background-color: #8be7bf;
+  color: #fff;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 300px;
+  background-image: url('banner3.jpg');
+  background-size: cover;
+  background-position: center top 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner3:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Social Media */
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media img {
+  max-width: 40px;
+  max-height: 30px;
+}
+
+/* Gallary */
+#gall h1 {
+  font-size: clamp(20px, 2.5vw, 36px);
+  color: rgba(#fff, 0.8);
+  font-weight: 600;
+  text-align: center;
+}
+
+#gall img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+#gall ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-align: center;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  scroll-snap-type: x mandatory; /* Snap to the nearest item */
+}
+
+#gall li {
+  scroll-snap-align: center; /* Snap item to the center of the viewport */
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: min(50vw, 350px);
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(108,196,164);
+  color: #9b9dad;
+  padding-bottom: 1rem;
+  font-size: clamp(8px, 2.5vw, 22px);
+  box-shadow: -10px 0 30px 0 rgba(#000, 0.25);
+  margin-left: -5px;
+}
+
+/* Blinking Name*/.by-mercy {
+  position: relative;
+  top: 0px;
+  bottom: 5px;
+  left: 0px;
+  color: #000000;
+  display: inline;
+  }
+
+.cursor {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
