@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="tab_logo.svg" />
+  <title>Reservations - PÜR&SIMPLE South Korea</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div id="navbar">
+          <li><a href="index.html" id="logo"><img src="sticky-logo.svg" alt="Logo" style="width:70;height:3rem; margin-bottom: -10px; margin-top: 0px"></a></li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="plans.html">OUR PLANS</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="locations.html">LOCATIONS</a></li>
+          <li><a href="reservations.html">RESERVATIONS</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <img src="P&S yinyang.svg" alt="Logo" class="logo">
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <main style="text-align: center;">
+
+    <h1>Book a Table</h1>
+    <form action="reservation_process.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="guests">Number of People:</label>
+      <input type="number" id="guests" name="guests" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  
+  <div class="banner2">
+  </div>
+
+  <footer>
+<!--     <div class="by-mercy" data-period="2000" data-type='[ "Created by ..." ]'>
+      <span class="wrap"></span><span class="cursor">|</span>
+    </div> -->
+    <p>&copy; 2023 Pur & Simple South Korea. All rights reserved.<div class="social-media">
+      <a href="" target="_blank" rel="noopener noreferrer">
+        <img src="twitter.png" alt="Twitter">
+      </a>
+      <a href="https://www.instagram.com/pursimpleca/?hl=en" target="_blank" rel="noopener noreferrer">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/pursimpleca/" target="_blank" rel="noopener noreferrer">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+    </div></p>
+     
+  </footer>
+  
+  <script src="main.js"></script>
+  <script src="blink.js"></script>
+</body>
+</html>
